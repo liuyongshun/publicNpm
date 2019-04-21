@@ -5,10 +5,10 @@
  * @return {[type]}    [description]
  */
 function randomNum (n1, n2) {
-  if (arguments.length===2) {
+  if (arguments.length === 2) {
     return Math.round(n1 + Math.random() * (n2 - n1))
   }
-  if (arguments.length===1) {
+  if (arguments.length === 1) {
     return Math.round(Math.random() * n1)
   }
 }
