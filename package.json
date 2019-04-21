@@ -1,8 +1,8 @@
 {
-  "name": "publicnpm",
-  "version": "1.0.0",
+  "name": "dev-public-tool",
+  "version": "1.0.1",
   "description": "Method lib",
-  "main": "lib/index.js",
+  "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "precommit": "./node_modules/.bin/eslint --ext .jsx,.js ./",
