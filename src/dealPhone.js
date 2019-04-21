@@ -5,9 +5,9 @@
  * @param  {[String]} sty      [description]
  * @param  {[Number]} styCount [description]
  * @return {[type]}          [description]
- * 1. 手机号隐藏hideNumber ('18330235246', [0])
- * 2. 姓名隐藏hideNumber ('刘二狗', [1]) ：刘**
- * 3. 自定义：hideNumber('sdfslf', [2, 4],'-',8) ：字符串、开始和结束的位置、代替样式、该样式出现的次数。
+ * 1. 手机号隐藏dealPhone ('18333335246', [0])
+ * 2. 姓名隐藏dealPhone ('刘二狗', [1]) ：刘**
+ * 3. 自定义：dealPhone('sdfslf', [2, 4],'-',8) ：字符串、开始和结束的位置、代替样式、该样式出现的次数。
  */
 function dealPhone (str, pos, sty, styCount) {
   var argLength, defaultSty, endPos
