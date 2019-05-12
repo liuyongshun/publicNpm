@@ -25,6 +25,6 @@ function formChecked (str, type) {
   }
 }
 
-export default {
+export {
   formChecked
 }

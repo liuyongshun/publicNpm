@@ -29,6 +29,6 @@ function dealSort (val, type) {
   }
 }
 
-export default {
+export {
   dealSort
 }

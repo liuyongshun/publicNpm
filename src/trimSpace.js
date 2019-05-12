@@ -28,6 +28,6 @@ function trimSpace (str, type) {
   }
 }
 
-export default {
+export {
   trimSpace
 }

@@ -32,6 +32,6 @@ function minMaxVal (arr, minMax, type) {
     console.info(err, 'plugin suffix = . =!!!')
   }
 }
-export default {
+export {
   minMaxVal
 }

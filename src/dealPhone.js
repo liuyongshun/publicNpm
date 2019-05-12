@@ -44,6 +44,6 @@ function dealPhone (str, pos, sty, styCount) {
     console.info(err, 'plugin suffix = . =!!!')
   }
 }
-export default {
+export {
   dealPhone
 }

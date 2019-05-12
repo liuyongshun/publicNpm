@@ -67,6 +67,6 @@ function pwdRange (str, arr, length = 6) {
     console.info(err, 'plugin suffix = . =!!!')
   }
 }
-export default {
+export {
   pwdRange
 }

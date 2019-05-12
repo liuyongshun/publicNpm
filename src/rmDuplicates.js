@@ -25,6 +25,6 @@ function rmDuplicates (arr, property) {
     console.info(err, 'plugin suffix = . =!!!')
   }
 }
-export default {
+export {
   rmDuplicates
 }

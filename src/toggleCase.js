@@ -26,6 +26,6 @@ function toggleCase (str, type) {
   }
 }
 
-export default {
+export {
   toggleCase
 }
