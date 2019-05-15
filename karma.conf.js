@@ -84,7 +84,7 @@ module.exports = function(config) {
                 options: { esModules: true }
             },
              enforce: 'post',
-             include: path.resolve('./test')
+             include: path.resolve('./src')
            }
          ]
       }
