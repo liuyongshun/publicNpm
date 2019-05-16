@@ -1,9 +1,12 @@
-import { toggleCase } from '../src/toggleCase.js';
+import { dealPhone } from '../src/dealPhone.js';
 describe('first test', function() {
-  it('test string that every word to be uppercase', function() {
-    assert(toggleCase('abc', 'word') === 'Abc');
+  it('dealPhone number', function() {
+    assert(dealPhone('18333335246', [0]) === '183*****246');
   });
-  it('test the first word of each paragraph to be uppercase', function() {
-    assert(toggleCase('abc\ndcef\nghijk', 'paragraph') === 'Abc\nDcef\nGhijk');
+  it('dealPhone number', function() {
+    assert(dealPhone('刘永顺', [1]) === '刘**');
+  });
+  it('dealPhone number', function() {
+    assert(dealPhone('123456789', [2, 4], '-', 3) === '12---56789');
   });
 });

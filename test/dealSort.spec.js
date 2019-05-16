@@ -1,9 +1,11 @@
 import { dealSort } from '../src/dealSort.js';
 describe('first test', function() {
   it('test string that every word to be uppercase', function() {
-    assert(dealSort([1, 8, 2, 4], 'up') === 'Abc');
+    var arr = dealSort([1, 8, 2, 4], 'up')
+    assert(arr[0] === 1 && arr[3] === 8);
   });
-  it('test the first word of each paragraph to be uppercase', function() {
-    assert(dealSort('abc\ndcef\nghijk', 'paragraph') === 'Abc\nDcef\nGhijk');
+  it('test string that every word to be uppercase', function() {
+    var arr = dealSort([1, 8, 2, 4], 'lower')
+    assert(arr[0] === 8 && arr[3] === 1);
   });
 });
