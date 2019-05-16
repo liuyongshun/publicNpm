@@ -5,6 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "karma start karma.conf.js",
+    "precommit": "./node_modules/.bin/eslint --ext .jsx,.js ./",
+    "prepush": "./node_modules/.bin/eslint --ext .jsx,.js ./",
     "eslint_fix": "./node_modules/.bin/eslint --fix  --ext .jsx,.js ./",
     "buildes5": "babel src -d lib",
     "lint": "eslint --fix src",
