@@ -1,0 +1,28 @@
+# 使用的语言
+language: node_js
+
+# node的版本
+node_js:
+  - 6
+  - 8
+  - 9
+  - 10
+
+# 仓库的分支
+branches:
+  only:
+  - master
+
+# 执行install方法
+install:
+- npm install
+
+# 执行脚本命令
+script:
+  - npm run lint
+  - npm run test
+  - npm run buildes5
+
+# 成功后执行
+after_success:
+- npm run coveralls

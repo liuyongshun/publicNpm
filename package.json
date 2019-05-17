@@ -9,6 +9,7 @@
     "prepush": "./node_modules/.bin/eslint --ext .jsx,.js ./",
     "eslint_fix": "./node_modules/.bin/eslint --fix  --ext .jsx,.js ./",
     "buildes5": "babel src -d lib",
+    "cover": "istanbul cover node_modules/mocha/bin/_mocha",
     "coveralls": "npm run cover -- --report lcovonly && cat ./coverage/lcov.info | coveralls",
     "lint": "eslint --fix src",
     "build": "babel src --out-file script-compiled.js"
