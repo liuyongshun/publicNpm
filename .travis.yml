@@ -16,8 +16,9 @@ install:
 
 # 执行脚本命令
 script:
+  - npm run lint
   - npm run buildes5
 
 # 成功后执行
 after_success:
-- npm run coveralls
+- cat ./coverage/lcov.info | ./node_modules/.bin/coveralls
