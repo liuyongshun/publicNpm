@@ -3,10 +3,7 @@ language: node_js
 
 # node的版本
 node_js:
-  - 6
-  - 8
-  - 9
-  - 10
+  - 10.8.0
 
 # 仓库的分支
 branches:
