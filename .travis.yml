@@ -18,6 +18,7 @@ install:
 script:
   - npm run lint
   - npm run buildes5
+  - npm run cover
 
 # 成功后执行
 after_success:

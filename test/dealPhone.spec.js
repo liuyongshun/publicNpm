@@ -1,4 +1,6 @@
 import { dealPhone } from '../src/dealPhone.js';
+let assert = require('assert');
+
 describe('first test', function() {
   it('dealPhone number', function() {
     assert(dealPhone('18333335246', [0]) === '183*****246');

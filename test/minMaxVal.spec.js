@@ -1,4 +1,6 @@
 import { minMaxVal } from '../src/minMaxVal.js';
+let assert = require('assert');
+
 describe('first test', function() {
   it('max', function() {
     assert(minMaxVal([1, 6, 2], 'max').value === 6);

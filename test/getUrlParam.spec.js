@@ -1,4 +1,6 @@
 import { toggleCase } from '../src/toggleCase.js';
+let assert = require('assert');
+
 describe('first test', function() {
   it('test string that every word to be uppercase', function() {
     assert(toggleCase('abc', 'word') === 'Abc');

@@ -1,4 +1,6 @@
 import { formChecked } from '../src/formChecked.js';
+let assert = require('assert');
+
 describe('first test', function() {
   it('checked', function() {
     assert(formChecked('abc@qq.com', 'email') === true);

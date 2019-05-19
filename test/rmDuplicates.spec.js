@@ -1,4 +1,6 @@
 import { rmDuplicates } from '../src/rmDuplicates.js';
+let assert = require('assert');
+
 describe('first test', function() {
   it('Remove Duplicates', function() {
     assert(rmDuplicates([1, 3, 2, 3, 2]).length === 3);

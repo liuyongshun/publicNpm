@@ -1,4 +1,6 @@
 import { dealSort } from '../src/dealSort.js';
+let assert = require('assert');
+
 describe('first test', function() {
   it('test string that every word to be uppercase', function() {
     var arr = dealSort([1, 8, 2, 4], 'up')
