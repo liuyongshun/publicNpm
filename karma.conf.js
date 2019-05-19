@@ -64,8 +64,8 @@ module.exports = function(config) {
 
 
     coverageReporter: {
-      dir: './coverage', // 覆盖率结果文件放在 test/coverage 文件夹中
-      type: 'html'
+      reports: ['html', 'lcovonly', 'text-summary'],
+      dir: './coverage' // 覆盖率结果文件放在 test/coverage 文件夹中
     },
 
 

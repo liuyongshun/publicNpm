@@ -17,6 +17,7 @@ install:
 # 执行脚本命令
 script:
   - npm run lint
+  - npm run test
   - npm run buildes5
 
 # 成功后执行
