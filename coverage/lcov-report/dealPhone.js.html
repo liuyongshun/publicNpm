@@ -20,31 +20,31 @@
     </h1>
     <div class='clearfix'>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">90.48% </span>
         <span class="quiet">Statements</span>
-        <span class='fraction'>0/21</span>
+        <span class='fraction'>19/21</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">81.25% </span>
         <span class="quiet">Branches</span>
-        <span class='fraction'>0/16</span>
+        <span class='fraction'>13/16</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">100% </span>
         <span class="quiet">Functions</span>
-        <span class='fraction'>0/2</span>
+        <span class='fraction'>2/2</span>
       </div>
       <div class='fl pad1y space-right2'>
-        <span class="strong">0% </span>
+        <span class="strong">90.48% </span>
         <span class="quiet">Lines</span>
-        <span class='fraction'>0/21</span>
+        <span class='fraction'>19/21</span>
       </div>
     </div>
     <p class="quiet">
       Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
     </p>
   </div>
-  <div class='status-line low'></div>
+  <div class='status-line high'></div>
 <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -108,30 +108,30 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">10x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -155,32 +155,32 @@
  * 2. 姓名隐藏dealPhone ('刘二狗', [1]) ：刘**
  * 3. 自定义：dealPhone('sdfslf', [2, 4],'-',8) ：字符串、开始和结束的位置、代替样式、该样式出现的次数。
  */
-function <span class="fstat-no" title="function not covered" >dealPhone </span>(str, pos, sty, styCount) {
+function dealPhone (str, pos, sty, styCount) {
   var argLength, defaultSty, endPos
-<span class="cstat-no" title="statement not covered" >  argLength = arguments.length</span>
-  function <span class="fstat-no" title="function not covered" >strRepeat </span>(str, count) {
-    var text = <span class="cstat-no" title="statement not covered" >''</span>
-<span class="cstat-no" title="statement not covered" >    for (var i = 0; i &lt; count; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      text += str</span>
+  argLength = arguments.length
+  function strRepeat (str, count) {
+    var text = ''
+    for (var i = 0; i &lt; count; i++) {
+      text += str
     }
-<span class="cstat-no" title="statement not covered" >    return text</span>
+    return text
   }
-<span class="cstat-no" title="statement not covered" >  try {</span>
-<span class="cstat-no" title="statement not covered" >    if (typeof str === 'string') {</span>
-<span class="cstat-no" title="statement not covered" >      if (argLength === 2 &amp;&amp; pos[0] === 0) {</span>
-<span class="cstat-no" title="statement not covered" >        defaultSty = strRepeat('*', 5)</span>
-<span class="cstat-no" title="statement not covered" >        return str.replace(/(\d{3})(\d{5})(\d{3})/, '$1' + defaultSty + '$3')</span>
+  try {
+    <span class="missing-if-branch" title="else path not taken" >E</span>if (typeof str === 'string') {
+      if (argLength === 2 &amp;&amp; pos[0] === 0) {
+        defaultSty = strRepeat('*', 5)
+        return str.replace(/(\d{3})(\d{5})(\d{3})/, '$1' + defaultSty + '$3')
       }
-<span class="cstat-no" title="statement not covered" >      if (argLength === 2 &amp;&amp; pos[0] === 1) {</span>
-<span class="cstat-no" title="statement not covered" >        defaultSty = strRepeat('*', 2)</span>
-<span class="cstat-no" title="statement not covered" >        str = str.substring(0, 1) + defaultSty</span>
-<span class="cstat-no" title="statement not covered" >        return str</span>
+      if (argLength === 2 &amp;&amp; pos[0] === 1) {
+        defaultSty = strRepeat('*', 2)
+        str = str.substring(0, 1) + defaultSty
+        return str
       }
-<span class="cstat-no" title="statement not covered" >      if (argLength === 4) {</span>
-<span class="cstat-no" title="statement not covered" >        defaultSty = strRepeat(sty, styCount)</span>
-<span class="cstat-no" title="statement not covered" >        if (pos.length === 2 &amp;&amp; pos[1] &gt; pos[0]) {</span>
-<span class="cstat-no" title="statement not covered" >          endPos = pos[1] - pos[0]</span>
-<span class="cstat-no" title="statement not covered" >          return str.replace(new RegExp('(.{' + pos[0] + '})(.{' + endPos + '})(.?)'), '$1' + defaultSty + '$3')</span>
+      <span class="missing-if-branch" title="else path not taken" >E</span>if (argLength === 4) {
+        defaultSty = strRepeat(sty, styCount)
+        <span class="missing-if-branch" title="else path not taken" >E</span>if (pos.length === 2 &amp;&amp; pos[1] &gt; pos[0]) {
+          endPos = pos[1] - pos[0]
+          return str.replace(new RegExp('(.{' + pos[0] + '})(.{' + endPos + '})(.?)'), '$1' + defaultSty + '$3')
         }
       }
     } else {
@@ -199,7 +199,7 @@ export {
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Wed May 15 2019 22:38:55 GMT+0800 (GMT+08:00)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Sun May 19 2019 11:42:27 GMT+0800 (GMT+08:00)
 </div>
 </div>
 <script src="prettify.js"></script>
