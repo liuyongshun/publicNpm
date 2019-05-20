@@ -81,6 +81,7 @@ module.exports = function(config) {
              test: /\.js$/,
              use: {
                 loader: 'istanbul-instrumenter-loader',
+                // 允许es6的modules
                 options: { esModules: true }
             },
              enforce: 'post',
