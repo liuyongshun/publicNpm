@@ -1,6 +1,6 @@
 {
   "name": "dev-public-tool",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Method lib",
   "main": "lib/index.js",
   "scripts": {
