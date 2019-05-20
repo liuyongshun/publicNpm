@@ -7,7 +7,7 @@
 ### install
 
 ```
-npm install element-ui -D
+npm install dev-public-tool -D
 
 ```
 
