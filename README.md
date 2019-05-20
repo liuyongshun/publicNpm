@@ -1,8 +1,15 @@
 
-[![Build Status](https://travis-ci.com/liuyongshun/publicNpm.svg?branch=master)](https://travis-ci.com/liuyongshun/publicNpm) 
+[![Build Status](https://travis-ci.com/liuyongshun/publicNpm.svg?branch=master)](https://travis-ci.com/liuyongshun/publicNpm)
 ![npm](https://img.shields.io/npm/v/dev-public-tool.svg)
 ![npm](https://img.shields.io/npm/dw/dev-public-tool.svg)
 [![Coverage Status](https://coveralls.io/repos/github/liuyongshun/publicNpm/badge.svg?branch=master)](https://coveralls.io/github/liuyongshun/publicNpm?branch=master)
+
+### install
+
+```
+npm install element-ui -D
+
+```
 
 # Method
 
@@ -75,7 +82,7 @@ minMax：选
 type：选
 
 ```
-minMax : 
+minMax :
 
 默认返回最大值；
 
@@ -92,7 +99,7 @@ arr： 必
 length： 选
 
 ```
-arr : 五种校验类型,按数组顺序校验，可以自己调位置把控顺序。 
+arr : 五种校验类型,按数组顺序校验，可以自己调位置把控顺序。
   length： 字符长度
   number： 是否含有数字
   upper： 是否有大写
