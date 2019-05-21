@@ -4,48 +4,42 @@
 ![npm](https://img.shields.io/npm/dw/dev-public-tool.svg)
 [![Coverage Status](https://coveralls.io/repos/github/liuyongshun/publicNpm/badge.svg?branch=master)](https://coveralls.io/github/liuyongshun/publicNpm?branch=master)
 
-### install
+### Install
 
 ```
 npm install dev-public-tool -D
 
 ```
 
-# Method
+# Usage
 
 - dealPhone (str, pos, sty, styCount)
 
-str：必
-pos：必
-sty：选
-styCount：选
+| params | optional | type |
+|----------|:-------------:|------:|
+| str | yes | String |
+| pos | yes | Array |
+| sty | no | String |
+| styCount | no | Number |
 
 
 ```
-传两个参数：
+dealPhone('18330233333', [0])           // 183*****333
+dealPhone('刘二二', [1])                // 刘**
+dealPhone('abcdefgh', [2, 4], '-', 8)  // ab--------efgh
 
-手机号隐藏dealPhone ('18333335246', [0])
-
-姓名隐藏dealPhone ('刘二狗', [1]) ：刘**
-
-传四个参数：
-
-dealPhone('sdfslf', [2, 4],'-',8) ：字符串、开始和结束的位置、代替样式、该样式出现的次数。
 ```
 
 - dealSort (val, type)
 
-val：必
-type：选
 
 ```
+dealSort([1, 5, 22, 8, 2, 31, 2], 'up')    // from small to large [1, 2, 2, 5, 8, 22, 31]
 
-type : up 从小到大排序；
+dealSort([1, 5, 22, 8, 2, 31, 2], 'lower') // from large to small [31, 22, 8, 5, 2, 2, 1]
 
-type : lower 从大到小排序；
-
-type : split 分开整数和浮点数；
-
+dealSort([1, 5, 22, 8, 2, 31, 2, 3.3, 1.5, 88.2, 9.1], 'split') 
+// split int and float  [1, 5, 22, 8, 2, 31, 2, 3.3, 1.5, 88.2, 9.1]
 ```
 
 - formChecked (str, type)
