@@ -4,7 +4,7 @@
 ![npm](https://img.shields.io/npm/dw/dev-public-tool.svg)
 [![Coverage Status](https://coveralls.io/repos/github/liuyongshun/publicNpm/badge.svg?branch=master)](https://coveralls.io/github/liuyongshun/publicNpm?branch=master)
 
-### Install
+# Install
 
 ```
 npm install dev-public-tool -D
@@ -13,15 +13,22 @@ npm install dev-public-tool -D
 
 # Usage
 
-- dealPhone (str, pos, sty, styCount)
+```
+import{ trimSpace, toggleCase, dealPhone, dealSort, pwdRange, minMaxVal, rmDuplicates, formChecked, randomNum } from 'dev-public-tool'
+```
 
-| params | optional | type |
-|----------|:-------------:|------:|
+# Quickstart
+
+#### 1.dealPhone (str, pos, sty, styCount)
+
+| params | option | type |
+|:----------:|:-------------:|:------:|
 | str | yes | String |
 | pos | yes | Array |
 | sty | no | String |
 | styCount | no | Number |
 
+**example**
 
 ```
 dealPhone('18330233333', [0])           // 183*****333
@@ -30,63 +37,95 @@ dealPhone('abcdefgh', [2, 4], '-', 8)  // ab--------efgh
 
 ```
 
-- dealSort (val, type)
+#### 2.dealSort (val, type)
 
+| params | option | type |
+|:---:|:---:|:---:|
+| val | yes | Array |
+| type | yes | String |
 
-```
-dealSort([1, 5, 22, 8, 2, 31, 2], 'up')    // from small to large [1, 2, 2, 5, 8, 22, 31]
+type: up
+type: lower
+type: split
 
-dealSort([1, 5, 22, 8, 2, 31, 2], 'lower') // from large to small [31, 22, 8, 5, 2, 2, 1]
-
-dealSort([1, 5, 22, 8, 2, 31, 2, 3.3, 1.5, 88.2, 9.1], 'split') 
-// split int and float  [1, 5, 22, 8, 2, 31, 2, 3.3, 1.5, 88.2, 9.1]
-```
-
-- formChecked (str, type)
-
-str：必
-type：必
+**example**
 
 ```
+dealSort([1, 5, 22, 8, 2, 31, 2], 'up')    // [1, 2, 2, 5, 8, 22, 31]
+
+dealSort([1, 5, 22, 8, 2, 31, 2], 'lower') // [31, 22, 8, 5, 2, 2, 1]
+
+dealSort([1, 5, 22, 8, 2, 31, 2, 3.3, 1.5, 88.2, 9.1], 'split') // [1, 5, 22, 8, 2, 31, 2, 3.3, 1.5, 88.2, 9.1]
+
+```
+
+#### 3.formChecked (str, type)
+
+| params | option | type |
+|:---:|:---:|:---:|
+| str | yes | String |
+| type | yes | String |
+
 type: email
+
 type: phone
+
 type: tel
+
 type: chinese
+
 type: idCard
+
 type: url
+
 type: carNumber
 
-```
-
-- getUrlParam(sVar)
-
-sVar：必
+**example** 
 
 ```
-截取路径上的参数值。
+
+formChecked('1234567@qq.com', 'email') // true
+
+```
+
+#### 4.getUrlParam(sVar)
+
+**example**
+
+```
 http://wwww.www.com?a=3&b=4
 getUrlParam('a')  // 3
 
 ```
 
-- minMaxVal (arr, minMax, type)
+#### 5.minMaxVal (arr, minMax, type)
 
-arr：必
-minMax：选
-type：选
+| params | option | type |
+|:---:|:---:|:---:|
+| arr | yes | Array |
+| minMax | no | String |
+| type | no | String |
+
+minMax: min
+
+minMax: max
+
+type: all
+
+**example**
 
 ```
-minMax :
+minMaxVal([3, 22, 1, 88, 3, 1, 88, 9]) // {value: 88, index: 3}
 
-默认返回最大值；
+minMaxVal([3, 22, 1, 88, 3, 1, 88, 9], 'min') // {value: 1, index: 2}
 
-min 返回最小值；
+minMaxVal([3, 22, 1, 88, 3, 1, 88, 9], 'max') // {value: 88, index: 3}
 
-type : all 有多个最大值时，返回所有出现过的值的位置；
+minMaxVal([3, 22, 1, 88, 3, 1, 88, 9], 'max', 'all') // {value: 88, index: 3, allIndex: [3, 6]}
 
 ```
 
-- pwdRange (str, arr, length)
+#### 6.pwdRange (str, arr, length)
 
 str：必
 arr： 必
@@ -103,46 +142,76 @@ arr : 五种校验类型,按数组顺序校验，可以自己调位置把控顺�
 length : 长度校验的长度默认6位。
 ```
 
-- randomNum (n1, n2)
+#### 7.randomNum (n1, n2)
 
-n1：必
-n2：选
+| params | option | type |
+|:---:|:---:|:---:|
+| n1 | yes | Number |
+| n2 | no | Number |
 
-```
-传一个参数默认0 - n1 内的随机整数
-
-传两个参数得到范围内的随机数整数
-```
-
-- rmDuplicates (arr, property) 数组去重
-
-arr：必
-property：选
-
+**example**
 
 ```
-arr : 原数组或者是类数组
-property : 可提供对象格式的数据的去重，根据属性名去重
+randomNum(4, 6) // value >= 4 && value <= 6
+andomNum(3) // value <= 3 && value >= 0
 ```
 
-- toggleCase (str, type)
+#### 8.rmDuplicates (arr, property) 
 
-str： 必
-type：必
+| params | option | type |
+|:---:|:---:|:---:|
+| arr | yes | Array |
+| property | no | String |
 
-```
-type : word 将每个单词首字母大写；
-type : paragraph 将每个段落的首字母大写；
-```
-
-- trimSpace (str, type)
-
-str： 必
-type： 选
+**example**
 
 ```
-只有一个参数默认移除在字符串前后空格；
-type : all 移除所有空格；
-type : suffix 移除结尾的空格；
-type : prefix 移除开始的空格；
+rmDuplicates([1, 4, 2, 4, 1, 3]) // [1, 4, 2, 3]
+
+rmDuplicates([{name: 'hello', age: 22}, {name: 'world', age: 22}, {name: 'javascript', age: 4}], 'age') // [{name: 'hello', age: 22}, {name: 'javascript', age: 4}]
+```
+
+#### 9.toggleCase (str, type)
+
+| params | option | type |
+|:---:|:---:|:---:|
+| str | yes | String |
+| type | yes | String |
+
+type: word
+
+type: paragraph
+
+**example**
+
+```
+
+toggleCase('hello world erveryone', 'word') // Hello World Erveryone
+
+toggleCase('hello world \n erveryone', 'paragraph') // Hello world \n Erveryone
+
+```
+
+#### 10.trimSpace (str, type)
+
+| params | option | type |
+|:---:|:---:|:---:|
+| str | yes | String |
+| type | no | String |
+
+type : all
+
+type : suffix
+
+type : prefix
+
+**example**
+
+```
+
+trimSpace('  ab cd  ') // ab cd
+trimSpace('  ab cd  ', 'all') // abcd
+trimSpace('  ab cd  ', 'suffix') //   ab cd
+trimSpace('  ab cd  ', 'prefix') // ab cd
+
 ```
