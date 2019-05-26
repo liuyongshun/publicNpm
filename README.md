@@ -1,14 +1,13 @@
 
 [![Build Status](https://travis-ci.com/liuyongshun/publicNpm.svg?branch=master)](https://travis-ci.com/liuyongshun/publicNpm)
 ![npm](https://img.shields.io/npm/v/dev-public-tool.svg)
-![npm](https://img.shields.io/npm/dw/dev-public-tool.svg)
+![npm](https://img.shields.io/npm/dm/dev-public-tool.svg)
 [![Coverage Status](https://coveralls.io/repos/github/liuyongshun/publicNpm/badge.svg?branch=master)](https://coveralls.io/github/liuyongshun/publicNpm?branch=master)
 
 # Install
 
 ```
 npm install dev-public-tool -D
-
 ```
 
 # Usage
